@@ -13,15 +13,16 @@
  */
 ( function ( $ ) {
 	/**
-	 * Put a badge on an item on the page. The badge container will be appended to the selected element(s).
+	 * Put a badge on an item on the page. The badge container will be appended to the 
+	 *  selected element(s).
 	 *
 	 *     $element.badge( 5 );
 	 *     $element.badge( '100+' );
 	 *     $element.badge( 'New', 'inline' );
 	 *     $element.badge( 0, 'upper-right', true );
 	 *
-	 * @param {number|string} text The value to display in the badge. If the value is falsey (0,
-	 *  null, false, '', etc.), any existing badge will be removed.
+	 * @param {number|string} text The value to display in the badge. If the value is falsey
+	 *  (0, null, false, '', etc.), any existing badge will be removed.
 	 * @param {string} [position=top] The position of the badge. Options are:
 	 *  inline, top, bottom.
 	 * @param {boolean} [displayZero=false] True if the number zero should be displayed,
@@ -57,7 +58,6 @@
 		}
 
 		if ( displayBadge ) {
-console.debug(1);
 			// If a badge already exists, reuse it
 			if ( $badge.length ) {
 				$badge

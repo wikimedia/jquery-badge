@@ -16,7 +16,7 @@ $( '#inbox' ).badge( 8 );
 
 ![button with badge](example.png)
 
-You can pass either a number or a text string as the first parameter. If you pass 0, false, or an empty string, the badge will not be displayed (although see "Advanced options" below).
+You can pass either a number or a text string as the first parameter. If you pass 0, false, null, or an empty string, the badge will not be displayed (although see "Advanced options" below).
 
 Note: Make sure the parent element has its position set to `relative`, or the badge may not appear in the correct location.
 
@@ -30,3 +30,5 @@ You can force the badge to display zeroes by passing `true` as a third parameter
 ```
 $( '#inbox' ).badge( 0, 'top', true );
 ```
+
+See `test.html` for more examples.
