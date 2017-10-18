@@ -24,7 +24,9 @@ Note: Make sure the parent element has its position set to `relative`, or the ba
 You can control the location of the badge by passing a second parameter to the badge function. The parameter must be set to "top", "bottom", or "inline".
 ```
 $( '#inbox' ).badge( 8, 'bottom' );
+```
 
 You can force the badge to display zeroes by passing `true` as a third parameter.
 ```
 $( '#inbox' ).badge( 0, 'top', true );
+```
