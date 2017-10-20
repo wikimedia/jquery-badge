@@ -1,8 +1,14 @@
 # jquery.badge
 
-This is a simple jQuery plug-in to overlay a counter badge on top of another element on a page.
+This is a simple jQuery plug-in to overlay a badge on top of another element on a page. Such badges are commonly used as notification counters on icons to alert users that they have new content waiting for them.
 
-To use it, simply chain the function onto a jQuery DOM element. For example, if you have the following HTML ...
+To use it, copy the `jquery.badge.js` and `jquery.badge.css` files into your project and load them where needed:
+```
+<script src="jquery.badge.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.badge.css">
+```
+
+Then simply chain the function onto a jQuery DOM element. For example, if you have the following HTML ...
 ```html
 <div id="inbox" class="button">My Inbox</div>
 ```
@@ -18,7 +24,15 @@ $( '#inbox' ).badge( 8 );
 
 You can pass either a number or a text string as the first parameter. If you pass 0, false, null, or an empty string, the badge will not be displayed (although see "Advanced options" below).
 
-Note: Make sure the parent element has its position set to `relative`, or the badge may not appear in the correct location.
+### Troubleshooting
+If the badge isn't appearing in the right location, make sure the parent element has its position set to `relative`:
+```
+.button {
+	position: relative;
+}
+```
+
+If the badge isn't appearing at all, make sure you are loading both jQuery and the jquery.badge plug-in on the page and that you are passing a non-zero value to the function.
 
 ### Advanced options
 You can control the location of the badge by passing a second parameter to the badge function. The parameter must be set to "top", "bottom", or "inline".
