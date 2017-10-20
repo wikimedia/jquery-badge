@@ -1,5 +1,6 @@
 /*
  * jQuery Badge plugin
+ * https://github.com/wikimedia/jquery.badge
  *
  * @license MIT
  *
