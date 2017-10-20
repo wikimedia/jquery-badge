@@ -21,7 +21,7 @@
 	 *     $element.badge( 5 );
 	 *     $element.badge( '100+' );
 	 *     $element.badge( 'New', 'inline' );
-	 *     $element.badge( 0, 'upper-right', true );
+	 *     $element.badge( 0, 'top', true );
 	 *
 	 * @param {number|string} text The value to display in the badge. If the value is falsey
 	 *  (0, null, false, '', etc.), any existing badge will be removed.
@@ -33,7 +33,7 @@
 	 * @chainable
 	 */
 	$.fn.badge = function ( text, position, displayZero ) {
-		var $badge = this.find( '.badge' ),
+		var $badge = this.find( '.notification-badge' ),
 			badgeStyleClass,
 			isImportant = true,
 			displayBadge = true;
@@ -43,9 +43,9 @@
 			position === 'top' ||
 			position === 'bottom'
 		) {
-			badgeStyleClass = 'badge-' + position;
+			badgeStyleClass = 'notification-badge-' + position;
 		} else {
-			badgeStyleClass = 'badge-top';
+			badgeStyleClass = 'notification-badge-top';
 		}
 
 		// If we're displaying zero, ensure style to be non-important (grey instead of red)
@@ -63,15 +63,15 @@
 			// If a badge already exists, reuse it
 			if ( $badge.length ) {
 				$badge
-					.toggleClass( 'badge-important', isImportant )
-					.find( '.badge-content' ).text( text );
+					.toggleClass( 'notification-badge-important', isImportant )
+					.find( '.notification-badge-content' ).text( text );
 			} else {
 				// Otherwise, create a new badge with the specified text and style
-				$badge = $( '<div class="badge"></div>' )
+				$badge = $( '<div class="notification-badge"></div>' )
 					.addClass( badgeStyleClass )
-					.toggleClass( 'badge-important', isImportant )
+					.toggleClass( 'notification-badge-important', isImportant )
 					.append(
-						$( '<span class="badge-content"></span>' ).text( text )
+						$( '<span class="notification-badge-content"></span>' ).text( text )
 					)
 					.appendTo( this );
 			}

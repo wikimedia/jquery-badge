@@ -1,4 +1,4 @@
-.badge {
+.notification-badge {
 	min-width: 7px;
 	border-radius: 2px;
 	padding: 1px 4px;
@@ -9,28 +9,28 @@
 	cursor: pointer;
 }
 
-.badge-content {
+.notification-badge-content {
 	font-weight: bold;
 	color: #fff;
 	vertical-align: baseline;
 }
 
-.badge-inline {
+.notification-badge-inline {
 	margin-left: 3px;
 	display: inline-block;
 	vertical-align: text-top;
 }
-.badge-top {
+.notification-badge-top {
 	position: absolute;
 	top: -2px;
 	right: -3px;
 }
-.badge-bottom {
+.notification-badge-bottom {
 	position: absolute;
 	bottom: -2px;
 	right: -3px;
 }
 
-.badge-important {
+.notification-badge-important {
 	background-color: #d33;
 }
