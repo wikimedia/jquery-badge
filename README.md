@@ -1,6 +1,6 @@
 # jquery.badge
 
-This is a simple jQuery plug-in to overlay a badge on top of another element on a page. Such badges are commonly used as notification counters on icons to alert users that they have new content waiting for them.
+This is a simple jQuery plug-in to overlay a badge on top of another element on a page. Such badges are commonly used as notification counters on icons or buttons to alert users that they have new content waiting for them.
 
 To use it, copy the `jquery.badge.js` and `jquery.badge.css` files into your project and load them where needed:
 ```html
