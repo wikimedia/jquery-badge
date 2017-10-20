@@ -15,7 +15,7 @@
  */
 ( function ( $ ) {
 	/**
-	 * Put a badge on an item on the page. The badge container will be appended to the 
+	 * Put a badge on an item on the page. The badge container will be appended to the
 	 *  selected element(s).
 	 *
 	 *     $element.badge( 5 );
