@@ -45,4 +45,4 @@ You can force the badge to display zeroes by passing `true` as a third parameter
 $( '#inbox' ).badge( 0, 'top', true );
 ```
 
-See `test.html` for more examples.
+See [`test.html`](test.html) for more examples.
